@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    android:background="@drawable/bg"
+    android:baselineAligned="false" >
+    
+    <!-- scroll view  -->
+
+	<au.com.planetinnovation.marconi.widgets.CylinderScrollView
+	    android:layout_toRightOf="@+id/column"
+	    android:id="@+id/scrollview"
+	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" >
+   		
+	    <LinearLayout
+	        android:id="@+id/scroll_container"
+	    	android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content">
+   	    </LinearLayout>
+    
+	</au.com.planetinnovation.marconi.widgets.CylinderScrollView>
+	
+	<!-- center bar  -->
+        
+    <ImageView
+        	android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/column"
+       		android:layout_centerVertical="true"
+            android:contentDescription="@string/imagedesc"
+            android:scaleType="fitStart"
+            android:src="@drawable/arrow" >
+	</ImageView>
+	
+    <ImageView
+        	android:id="@+id/shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/column"
+            android:layout_marginLeft="-15dp"
+       		android:layout_centerVertical="true"
+            android:contentDescription="@string/imagedesc"
+            android:scaleType="fitStart"
+            android:src="@drawable/vertical_shadow" >
+	</ImageView>
+	
+	<!-- left hand column -->
+    
+    <LinearLayout
+        android:id="@+id/column"
+    	android:orientation="vertical"
+        android:layout_width="120dp"
+        android:background="#ff8800"
+   		android:layout_height="fill_parent" 
+   		android:layout_alignParentLeft="true" >
+	    
+        <LinearLayout 
+            android:id="@+id/column_section1"
+            android:layout_width="120dp"
+   			android:layout_height="60dp"
+   			android:gravity="center_vertical"
+   			android:orientation="vertical" >
+   			
+            <TextView
+                android:id="@+id/column_section1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+            
+         </LinearLayout>
+	    
+        <LinearLayout 
+            android:id="@+id/column_section2"
+            android:layout_width="120dp"
+   			android:layout_height="180dp"
+   			android:gravity="center_vertical"
+   			android:scaleType="fitXY"
+   			android:orientation="vertical" >
+   			
+            <TextView
+                android:id="@+id/column_section2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/column_section3"
+            android:layout_width="120dp"
+   			android:layout_height="180dp"
+   			android:gravity="center_vertical"
+   			android:scaleType="fitXY"
+   			android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/column_section3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+        </LinearLayout>
+        
+        <LinearLayout 
+        	android:id="@+id/column_section4"
+            android:layout_width="120dp"
+   			android:layout_height="60dp"
+   			android:gravity="center_vertical"
+   			android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/column_section4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+         	android:id="@+id/value_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+               
+	        <TextView
+	            android:id="@+id/column_section_value"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center_vertical"
+	            android:textColor="#ffffff"
+	            android:textSize="50dp" >
+	    	</TextView>
+	            
+	    	<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="-25dp"
+	            android:layout_below="@+id/column_section_value"
+	            android:textColor="#ffffff"
+	            android:text="@string/kwh"
+	            android:textSize="42dp" >
+	   		</TextView>
+   		</RelativeLayout>
+
+</RelativeLayout>

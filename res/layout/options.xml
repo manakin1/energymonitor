@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/overview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    android:background="@drawable/options_bg"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="right"
+    	android:orientation="horizontal">
+    	
+        <ImageView
+            android:id="@+id/button_send"
+            android:src="@drawable/icon_send"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content">  
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/button_home"
+            android:src="@drawable/icon_home"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+    </LinearLayout>
+    
+    
+    
+    <ImageView
+        android:src="@drawable/info_overlay"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    </ImageView>
+    
+    
+    
+    <LinearLayout
+        android:layout_marginTop="-11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/switch1"
+            android:src="@drawable/switch_on"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/bluetooth1"
+            android:src="@drawable/bluetooth_on"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+        
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-4dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="fill_parent" 
+    		android:gravity="center_vertical"
+    		android:textColor="#ffffff"
+    		android:textSize="18dp"
+    		android:text="Thermostat">     
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/switch2"
+            android:src="@drawable/switch_off"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/bluetooth2"
+            android:src="@drawable/bluetooth_off"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+        
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-4dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="fill_parent" 
+    		android:gravity="center_vertical"
+    		android:textColor="#ffffff"
+    		android:textSize="18dp"
+    		android:text="Solar Panel">     
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/switch3"
+            android:src="@drawable/switch_off"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/bluetooth3"
+            android:src="@drawable/bluetooth_off"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"> 
+        </ImageView>
+        
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-4dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="fill_parent" 
+    		android:gravity="center_vertical"
+    		android:textColor="#ffffff"
+    		android:textSize="18dp"
+    		android:text="Aircon">     
+        </TextView>
+    </LinearLayout>
+    
+    
+</LinearLayout>

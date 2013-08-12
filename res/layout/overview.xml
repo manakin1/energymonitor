@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/overview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:background="@drawable/bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+    android:id="@+id/bar1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#515e6b" >
+    	<ImageView
+    	 	android:id="@+id/hl1"
+            android:src="@drawable/highlight"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true" >  
+    	</ImageView>
+    	<ImageView
+    	 	android:id="@+id/shadow1"
+            android:src="@drawable/shadow"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+    	<ImageView
+    	 	android:id="@+id/bartitle1"
+            android:src="@drawable/bartitle1"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+    	
+    	<RelativeLayout
+    	    android:id="@+id/value1"
+    	    android:orientation="vertical"
+    	    android:gravity="center_horizontal"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+    	    <TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="48dip"
+		        android:layout_marginTop="2dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:textSize="38dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="43dip"
+		        android:text="@string/kwh">
+		 	</TextView>
+    	</RelativeLayout>
+
+    	<LinearLayout
+    	    android:id="@+id/price1"
+    	    android:orientation="horizontal"
+    	    android:visibility="invisible"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="26dip"
+		        android:text="$"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="40dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="2dip"  >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="24dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		</LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+    android:id="@+id/bar2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#4ecdc4" >
+	 	<ImageView
+            android:src="@drawable/highlight"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true" >  
+    	</ImageView>
+    	<ImageView
+            android:src="@drawable/shadow"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+    	<ImageView
+    	 	android:id="@+id/bartitle2"
+            android:src="@drawable/bartitle2"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+	    
+    	<RelativeLayout
+    	    android:id="@+id/value2"
+    	    android:orientation="vertical"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+    	    <TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="48dip"
+		        android:layout_marginTop="2dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/value1"
+		        android:textSize="38dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="43dip"
+		        android:text="@string/kwh">
+		 	</TextView>
+    	</RelativeLayout>
+
+    	<LinearLayout
+    	    android:id="@+id/price2"
+    	    android:orientation="horizontal"
+    	    android:visibility="invisible"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="26dip"
+		        android:text="$"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="40dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="2dip"  >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="24dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		</LinearLayout>
+    </RelativeLayout>
+ 
+   	<RelativeLayout 
+    android:id="@+id/bar3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#c5f263" >
+	 	<ImageView
+            android:src="@drawable/highlight"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true" >  
+    	</ImageView>
+    	<ImageView
+            android:src="@drawable/shadow"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+    	<ImageView
+    	 	android:id="@+id/bartitle3"
+            android:src="@drawable/bartitle3"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+	    
+	    <RelativeLayout
+    	    android:id="@+id/value3"
+    	    android:orientation="vertical"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+    	    <TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        style="@style/DropShadowText"
+		        android:textSize="48dip"
+		        android:layout_marginTop="2dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/value1"
+		        android:textSize="38dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="43dip"
+		        android:text="@string/kwh">
+		 	</TextView>
+    	</RelativeLayout>
+
+    	<LinearLayout
+    	    android:id="@+id/price3"
+    	    android:orientation="horizontal"
+    	    android:visibility="invisible"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="26dip"
+		        android:text="$"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="40dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="2dip"  >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="24dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		</LinearLayout>
+    </RelativeLayout>
+
+   	<RelativeLayout 
+    android:id="@+id/bar4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#a8dba8" >
+	 	<ImageView
+            android:src="@drawable/highlight"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true" >  
+    	</ImageView>
+    	<ImageView
+            android:src="@drawable/shadow"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+    	<ImageView
+    	 	android:id="@+id/bartitle4"
+            android:src="@drawable/bartitle4"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+	    
+	    <RelativeLayout
+    	    android:id="@+id/value4"
+    	    android:orientation="vertical"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+    	    <TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        style="@style/DropShadowText"
+		        android:textSize="48dip"
+		        android:layout_marginTop="2dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/value1"
+		        android:textSize="38dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="43dip"
+		        android:text="@string/kwh">
+		 	</TextView>
+    	</RelativeLayout>
+
+    	<LinearLayout
+    	    android:id="@+id/price4"
+    	    android:orientation="horizontal"
+    	    android:visibility="invisible"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="26dip"
+		        android:text="$"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="40dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="2dip"  >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="24dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		</LinearLayout>
+    </RelativeLayout>
+   
+   	<RelativeLayout 
+    android:id="@+id/bar5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#c44d58" >
+	 	<ImageView
+            android:src="@drawable/highlight"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true" >  
+    	</ImageView>
+    	<ImageView
+            android:src="@drawable/shadow"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+    	<ImageView
+    	 	android:id="@+id/bartitle5"
+            android:src="@drawable/bartitle5"
+            android:contentDescription="@string/imagedesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" >  
+    	</ImageView>
+	    
+    	<RelativeLayout
+    	    android:id="@+id/value5"
+    	    android:orientation="vertical"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+    	    <TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        style="@style/DropShadowText"
+		        android:textSize="48dip"
+		        android:layout_marginTop="2dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="fill_parent"
+		 		android:gravity="center_horizontal"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/value1"
+		        android:textSize="38dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="43dip"
+		        android:text="@string/kwh">
+		 	</TextView>
+    	</RelativeLayout>
+
+    	<LinearLayout
+    	    android:id="@+id/price5"
+    	    android:orientation="horizontal"
+    	    android:visibility="invisible"
+    	    android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/DropShadowText"
+		        android:textSize="26dip"
+		        android:text="$"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="40dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="2dip"  >
+		 	</TextView>
+		 	<TextView
+		 		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="24dip"
+		        style="@style/DropShadowText"
+		        android:layout_marginTop="-17dip" >
+		 	</TextView>
+		</LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

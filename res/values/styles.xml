@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="DropShadowText">
+ 		<item name="android:textColor">#FFFFFF</item>
+ 		<item name="android:shadowColor">#25333333</item>
+ 		<item name="android:shadowRadius">2.5</item>
+ 		<item name="android:shadowDx">3</item>
+ 		<item name="android:shadowDy">6</item>
+	</style>
+	
+    <style name="LabelTextNormal">
+ 		<item name="android:textColor">#FFFFFF</item>
+ 		<item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:layout_marginLeft">15dp</item>
+ 		<item name="android:textSize">20dp</item>
+	</style>
+	
+    <style name="LabelTextHighlight">
+ 		<item name="android:textColor">#FFFFFF</item>
+ 		<item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:layout_marginLeft">15dp</item>
+ 		<item name="android:textSize">50dp</item>
+	</style>
+
+</resources>

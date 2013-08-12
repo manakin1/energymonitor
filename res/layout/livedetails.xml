@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/livedata_bg"
+    android:baselineAligned="false" >
+    
+    <RelativeLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal">
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center_horizontal"
+	    	android:contentDescription="@string/imagedesc"
+            android:src="@drawable/indicator">    
+        </ImageView>
+        
+	    <TextView
+	        android:id="@+id/indicator_value"
+	        android:layout_alignParentTop="true"
+	        android:gravity="center_horizontal"
+	        android:layout_marginLeft="18dp"
+	        android:layout_marginTop="28dp"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#ffffff"
+	    	android:textSize="54dp">
+	        
+	    </TextView>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/max_indicator"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal">
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center_horizontal"
+	    	android:layout_alignParentBottom="true"
+	    	android:contentDescription="@string/imagedesc"
+            android:src="@drawable/max_indicator">    
+        </ImageView>
+        
+	    <TextView
+	        android:id="@+id/max_indicator_value"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="center_horizontal"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#ffffff"
+	    	android:textSize="34dp">
+	        
+	    </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
